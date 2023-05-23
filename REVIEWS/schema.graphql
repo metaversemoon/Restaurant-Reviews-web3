@@ -1,0 +1,10 @@
+type newRestaurant @entity(immutable: true) {
+  id: Bytes!
+  Contract_id: BigInt! # uint256
+  name: String! # string
+  url_ipfs: String! # string
+  rating: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
