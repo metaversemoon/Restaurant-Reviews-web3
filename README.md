@@ -6,20 +6,49 @@ A decentralized review system built on blockchain.
 
 There are many restaurant review platforms available, but they are often centralized and lack transparency. Users cannot be sure if reviews are authentic, and restaurant owners have limited control over their reputation on these platforms. Additionally, traditional review platforms are often limited to fiat currency, making international transactions difficult and costly.
 
+# Technologies Used
 
-#  Technologies Used
 - `spheron` for data storage on IPFS that generates a transaction hash used to create an NFT of a photo.
 - `Tellor` to request Restaurant business data. This tips the data provider and returns the data in a timely manner. All contracts for Tellor https://docs.tellor.io/tellor/the-basics/contracts-reference#filecoin-fvm Tellor: To get data from Yelp API so i can get prices, & hours
+  For Tellor we used the playground contract to interact as our test token contract.
+  We requested data using the RickAndMorty is UsingTellor.
+
+We used the IAutopay to tip the data user provider.
+We used the TellorFlex to staking to become a data user provider.
+We used the IERC20 to transferFrom tokens fromone user to another one and to get the balance of an account.
+
+Here are all our transactions ids:
+Contract Interaction:
+https://hyperspace.filfox.info/en/tx/0x559ccad2ea1250dfdb845dc70f6e62632e12eb5572e5d9a3177112c60eb0fb49
+
+https://hyperspace.filfox.info/en/tx/0x62b0d06f12170c784e03569e1d5ac30dbc513d942e160c22e20f161eeac756e7
+
+https://hyperspace.filfox.info/en/tx/0x4c2110f6cbe7281821de766e5d456e244e078bfaaea83f4009e411fd991b49c0
+
+Faucet
+https://hyperspace.filfox.info/en/tx/0x6f8212d3df1c84d886bd5dfa786307e57101ad300fa241a3f31566da075b13fe
+
+Submit Value
+https://hyperspace.filfox.info/en/tx/0xfb003b484687c4211f18e2719b04ebf2c04c3881a17477ad0637a9b01efe546f
+
+Tip: https://hyperspace.filfox.info/en/tx/0xeeec791142f013977fc94aafe2a81eb8eaaf048540e738139bc124f0425d5393
+
+Approve TRBP Spending : https://hyperspace.filfox.info/en/tx/0x9280458a410bf1403ff2b2f62c55c41403ee7cc5630a003843e8eba33493ab69
+
+Deposit Stake:
+https://hyperspace.filfox.info/en/tx/0xd92c65549586d62224661738f10e58efa03b67ec00e921634a7d65dd247cbe15
+
+Submit Value, InvokeContract
+https://hyperspace.filfox.info/en/tx/0xfb003b484687c4211f18e2719b04ebf2c04c3881a17477ad0637a9b01efe546f
+
+Contract deployment
+https://hyperspace.filfox.info/en/tx/0x7893d4c934fed8d30adbe7270c40518f8d9f24793c5ed5064ba719128d3776eb
 
 - `TableLand` made our work easy with the Ethereum network. This allows us to work with a relational database to store Restaurant and metadata for EVM chains like Ethereum. We will definitely keep using complex TableLand functions in the future.
 
-
-- `Hyperlane` connects our application across OptimismGoerli and Polygon Mumbai Network. This allows users to interact with our application from both either network which reduces the number of hoops users have to jump through just to use our app in multiple chains, get to your app.
-We deployed to HyperSpace our contract is 0x36Df2Cb62B988263143e6aEA32cbc7844EAEE87C
-https://beryx.zondax.ch/v1/search/fil/hyperspace/address/f410fg3psznrltcbggfb6nlvdfs6hqrhk52d47ngovpy
-
-
-
+* `Hyperlane` connects our application across OptimismGoerli and Polygon Mumbai Network. This allows users to interact with our application from both either network which reduces the number of hoops users have to jump through just to use our app in multiple chains, get to your app.
+  We deployed to HyperSpace our contract is 0x36Df2Cb62B988263143e6aEA32cbc7844EAEE87C
+  https://beryx.zondax.ch/v1/search/fil/hyperspace/address/f410fg3psznrltcbggfb6nlvdfs6hqrhk52d47ngovpy
 
 - `OptimismGoerli Network` enables Book Swap application to be a scalable platform with fast transactions. We deployed our app on the Alfajores Network.
 
@@ -50,15 +79,12 @@ It's about abstracting away the complexity of navigating between chains, and let
 
 * `React Js, Material-ui, Web3` React Js for the frontend, Material-ui, and Web3 to connect to the blockchain.
 
-
 # DEMO
 
 Taco Bell Cantina
 98-102 Queens Blvd, Queens, NY 11374
 http://www.tacobell.com
 Fast Food, Mexican, Tacos, Drinks
-
-
 
 ### Solution:
 
@@ -138,9 +164,9 @@ Client is a node int
 7. Build interactive front end
 
 ## Restaurant Reviews
+
 All contracts for Tellor https://docs.tellor.io/tellor/the-basics/contracts-reference#filecoin-fvm
 Tellor: To get data from Yelp API so i can get prices, & hours
-
 
 This is to request data
 requirements:
